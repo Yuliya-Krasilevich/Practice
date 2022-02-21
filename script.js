@@ -1,4 +1,4 @@
-const anchors = document.querySelector('a[href*="#down"]');
+const anchors = document.querySelector('a[href*="#"]');
 
 for (let anchor of anchors) {
     anchor.addEventListener('click', function(event){

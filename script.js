@@ -1,4 +1,4 @@
-const anchors = document.querySelector('a[href*="#"]');
+const anchors = document.querySelectorAll('a[href*="#down"]');
 
 for (let anchor of anchors) {
     anchor.addEventListener('click', function(event){
@@ -6,7 +6,7 @@ for (let anchor of anchors) {
         const blockID = anchor.getAttribute('href');
         document.querySelector('' + blockID).scrollIntoView({
             behavior:"smooth",
-            block: "start"
+            block: "end"
         })
     })
 }

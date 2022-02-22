@@ -17,7 +17,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 /*--------------------*/
 
 body {
-	font-family: 'Gotham', sans-serif;
+	font-family: 'Gotham', sans-serif; 
 }
 .header___main{
 	background: url('about/promo-theme.jpg')  center center/cover no-repeat;
@@ -27,7 +27,7 @@ body {
 	font-family: 'Gotham', sans-serif;
 	font-weight: normal;
 }
-.container {
+.header__container {
 	border-bottom: 1px #7d7c7b solid;
 	padding: 20px 0px;
 	margin-top: 30px;
@@ -75,10 +75,6 @@ body {
 	margin: 0px 25px 0px 0px;
 	padding: 0px 25px 0px 0px;
 }
-.page-header__link {
-	display: flex;
-}
-
 .page-header__socials {
 	margin-left: 20px;
 	color: #fff;
@@ -170,12 +166,12 @@ body {
 	padding: 60px;
 	color: #fff;
 }
-.section-header {
+.features-header {
 	text-align: center;
 	padding: 60px;
 	margin: 30px;
 }
-.section-header__title {
+.features-header__title {
 	font-size: 45px;
 }
 .features {
@@ -225,9 +221,6 @@ body {
 .articles__article {
 	display: flex;
 	overflow: hidden;
-}
-.articles__container {
-	max-width: 1464px;
 }
 
 .articles__article--left {
@@ -343,10 +336,10 @@ body {
 .key-feature__container {
 	background: url('about/key-feature-theme.jpg')  center center/cover no-repeat;
 	display: flex;
+	flex-direction: row;
 	padding: 20px 100px 20px 80px;
 }
 .key-feature__content {
-	flex-direction: column;
 	padding: 150px 100px 0px 30px;
 }
 .key-feature__title {
@@ -383,6 +376,7 @@ body {
 	width: 395px;
   }
 .key-feature__img img{
+	
 	padding: 50px;
 	height: 650px;
 	width: 431px;

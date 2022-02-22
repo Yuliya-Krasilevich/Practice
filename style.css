@@ -265,18 +265,15 @@ body {
 	flex-direction: column;
 }
 .blog-header__title {
-	position: relative;
 	font-size: 35px;
 	color: rgb(39, 39, 39);
 	z-index: 2;
 }
 .blog-header__letter {
-	position: absolute;
 	color: #7777766b;
 	font-size: 240px;
 	z-index: 1;
-	margin-top: -100px;
-	margin-left: 33.3333%;
+	margin-top: -130px;
 	font-weight: 700;
 }
 .blog-header__description {
@@ -399,12 +396,10 @@ body {
 	z-index: 2;
 }
 .our-team-header__letter{
-	position: absolute;
 	color: #7777766b;
 	font-size: 240px;
 	z-index: 1;
-	margin-top: -100px;
-	margin-left: 33.33333%;
+	margin-top: -130px;
 	font-weight: 700;
 }
 .our-team-header__description {

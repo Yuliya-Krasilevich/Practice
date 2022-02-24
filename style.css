@@ -28,7 +28,7 @@ body {
 	font-weight: normal;
 }
 .header__container {
-	border-bottom: 2px #7d7c7b solid;
+	border-bottom: 1px #7d7c7b solid;
 	padding: 20px 0px;
 	margin-top: 30px;
 }

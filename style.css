@@ -29,13 +29,13 @@ body {
 }
 .header__container {
 	border-bottom: 1px #7d7c7b solid;
-	padding: 20px 0px;
-	margin-top: 30px;
 }
 
 .header__menu {
 	display: flex;
 	justify-content: space-between;
+	padding: 10px;
+	margin: 20px;
 }
 .header__logo {
 	position: relative;
@@ -45,12 +45,12 @@ body {
 	border: 1px #11749e solid;
 	background: #11749e;
 	padding: 15px 10px;
-	margin: -25px 0px 0px 95px;
+	margin: -15px 0px 0px 65px;
 	z-index: 2;
 }
 .header__second-logo {
 	position: absolute;
-	margin: -10px 0px 20px 110px;
+	margin: 0px 0px 20px 80px;
 	width: 60px;
 	height: 60px;
 	z-index: 1;
@@ -59,29 +59,27 @@ body {
 }
 .header__links {
 	display: flex;
-	margin: 0px 100px 0px 0px;
+	position: relative;
+	top: 10px;
 }
 .header__link a{
+	position: relative;
 	color: #fff;
 	font-size: 17px;
 	font-weight: 700;
-	margin: 0px 25px 0px 0px;
-	padding: 0px 25px 0px 0px;
+	margin: 25px;
 }
 .header__link a:hover{
+	position: relative;
 	color: #11749e;
+	margin: 25px;
 	font-size: 17px;
 	font-weight: 700;
-	margin: 0px 25px 0px 0px;
-	padding: 0px 25px 0px 0px;
 }
 .page-header__socials {
-	margin-left: 20px;
+	position: relative;
+	margin-right: 65px;
 	color: #fff;
-}
-.page-header__socials:hover {
-	margin-left: 20px;
-
 }
 .fa-telegram {
 	margin-left: 60px;
@@ -126,7 +124,7 @@ body {
 	align-items: center;
 }
 .main__title{
-
+	text-align: center;
 	font-size: 150px;
 	color: #fff;
 	padding: 80px;
@@ -251,6 +249,10 @@ body {
 	font-size: 16px;
 	padding: 10px 5px 40px 0px;
 	line-height: 1.5;
+}
+
+.articles__image {
+	width: 50%;
 }
 /* ___________________________________________________________________________________________________ */
 
@@ -438,7 +440,6 @@ body {
 .contact-area__container {
 	background: url('about/contact-theme.jpg')  center center/cover no-repeat;
 	padding: 60px;
-	max-height: 769px;
 	overflow: hidden;
 }
 .contact-area__header {
@@ -464,15 +465,16 @@ body {
 }
 .contact-area__form {
 	margin: 60px;
+	justify-content: center;
 	display: flex;
 	flex-wrap: wrap;
 }
 .contact-area__user-data-form {
-	width: 345px;
+	width: 335px;
 	height: 50px;
 	border: 1px solid #fff;
 	background: transparent;
-	margin-bottom: 45px;
+	margin: 15px;
 	padding: 15px;
 	font-size: 17px;
 	color: #fff;
@@ -489,19 +491,13 @@ body {
  :-ms-input-placeholder {
 	color:    #fff;
  }
-.contact-area__user-data-form:nth-child(1) {
-	order: 0;
-}
 .contact-area__user-data-form:nth-child(2) {
-	order: 1;
-	margin-left:20px;
+	margin-left:15px;
 }
 .contact-area__user-data-form:nth-child(3) {
-	order: 2;
-	margin-left:20px;
+	margin-left:15px;
 }
 .contact-area__user-message-form {
-	order: 3;
 	border: 1px solid #fff;
 	background: transparent;
 	font-size: 20px;
@@ -510,10 +506,13 @@ body {
 	width: 1075px;
 	height: 200px;
 }
+.contact-area__btn-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .contact-area__btn {
-	margin-top: 40px;
-	order: 5;
-	margin-left: 40%;
+	margin-top: 60px;
 	border: 1px solid #11749e;
 	background: #11749e;
 	color: #fff;
@@ -521,12 +520,11 @@ body {
 	text-align: justify;
 	font-weight: 600;
 	text-transform: uppercase;
-	padding: 15px 30px 15px 30px;
+	padding: 15px 30px;
 }
 .contact-area__btn:hover {
-	margin-top: 35px;
+	margin-top: 60px;
 	order: 5;
-	margin-left: 39.9%;
 	border: 1px solid #0d5777;
 	background: #0d5777;
 	color: #fff;
@@ -534,7 +532,7 @@ body {
 	text-align: justify;
 	font-weight: 600;
 	text-transform: uppercase;
-	padding: 20px 35px;
+	padding: 15px 30px;
 }
 /* ___________________________________________________________________________________________________ */
 
@@ -558,4 +556,20 @@ body {
 }
 .footer__designers {
 	margin-left: 45%;
+}
+
+@media screen and (max-width: 1200px) {
+	body {max-width: 970px;}
+}
+
+@media screen and (max-width: 992px) {
+	body {
+		max-width: 750px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		max-width: none;
+	}
 }

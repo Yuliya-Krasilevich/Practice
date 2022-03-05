@@ -558,18 +558,3 @@ body {
 	margin-left: 45%;
 }
 
-@media screen and (max-width: 1200px) {
-	body {max-width: 970px;}
-}
-
-@media screen and (max-width: 992px) {
-	body {
-		max-width: 750px;
-	}
-}
-
-@media screen and (max-width: 767px) {
-	body {
-		max-width: none;
-	}
-}
